@@ -6,9 +6,9 @@ import android.arch.lifecycle.ViewModel
 
 class MainViewModel : ViewModel(){
 
-    lateinit var _observerTextState : MutableLiveData<String>  //mutable data is used to update data.. to observe data we use live data
+    private var _observerTextState =  MutableLiveData<String>()  //mutable data is used to update data.. to observe data we use live data
     val observerText : LiveData<String> // it contains the data of mutable data (it has its own method get) It is only used to get value
-     get() = _observerTextState
+     get() = _observerTextState //get function of live data returns value of type mutablelivedata
 
 
     fun setValue(){
