@@ -16,4 +16,10 @@ class MainViewModel : ViewModel(){
         _observerTextState.value = "Text Changed"
 
     }
+
+    fun newActivity(){
+
+
+
+    }
 }

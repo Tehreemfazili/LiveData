@@ -2,6 +2,7 @@ package com.example.admin.livedata
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             viewModel.setValue()
+        }
+
+        buttonNext.setOnClickListener {
+          //  viewModel.newActivity()
+           startActivity(Intent(this,FollowerActivity::class.java))
         }
         viewModel.observerText.observe(this, Observer {
             textView2.text = it
