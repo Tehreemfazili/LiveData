@@ -3,6 +3,7 @@ package com.example.admin.livedata
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
+import android.content.Intent
 
 class MainViewModel : ViewModel(){
 
@@ -10,16 +11,11 @@ class MainViewModel : ViewModel(){
     val observerText : LiveData<String> // it contains the data of mutable data (it has its own method get) It is only used to get value
      get() = _observerTextState //get function of live data returns value of type mutablelivedata
 
-
     fun setValue(){
 
         _observerTextState.value = "Text Changed"
 
     }
 
-    fun newActivity(){
 
-
-
-    }
 }

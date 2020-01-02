@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">LiveData</string>
     <string name="next">Next</string>
     <string name="ok">OK</string>
@@ -6,4 +7,7 @@
     <string name="_0">0</string>
     <string name="pichachuu">Pichachuu</string>
     <string name="follow">Follow</string>
+    <string name="unfollow">UNFOLLOW</string>
+    <string name="follower_added">Follower Added</string>
+
 </resources>

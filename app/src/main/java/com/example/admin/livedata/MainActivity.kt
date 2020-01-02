@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonNext.setOnClickListener {
-          //  viewModel.newActivity()
-           startActivity(Intent(this,FollowerActivity::class.java))
+            startActivity(Intent(this,FollowerActivity::class.java))
+
         }
+
         viewModel.observerText.observe(this, Observer {
             textView2.text = it
         })
