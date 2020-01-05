@@ -7,7 +7,9 @@
 
     <data>
 
-        <variable name="follower" type="com.example.admin.livedata.Followers"/>
+        <variable name="followerModel" type="com.example.admin.livedata.Followers"/>
+        <variable name="messageModel" type="com.example.admin.livedata.Message"/>
+<!--        <variable name="messageLeftModel" type="com.example.admin.livedata.MessageLeft" />-->
 
     </data>
 
@@ -69,7 +71,7 @@
                 android:id="@+id/linearLayout">
 
             <TextView
-                    android:text="@{follower.numOfFollowers}"
+                    android:text="@{followerModel.numOfFollowers}"
                     android:layout_width="wrap_content"
                     android:padding="4dp"
                     android:layout_height="wrap_content"
@@ -107,7 +109,7 @@
                 android:id="@+id/followerMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get Followers"
+                android:text="@{messageModel.message}"
                 android:padding="8dp"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
