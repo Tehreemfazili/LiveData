@@ -1,4 +1,4 @@
-package com.example.admin.livedata
+package com.example.admin.livedata.viewModel
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData

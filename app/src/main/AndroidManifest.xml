@@ -17,14 +17,14 @@
                 android:value="25.3.1"
                 tools:replace="android:value"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".FollowerActivity">
+        <activity android:name=".views.FollowerActivity">
         </activity>
     </application>
 

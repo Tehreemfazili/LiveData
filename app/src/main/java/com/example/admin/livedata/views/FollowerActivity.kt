@@ -1,12 +1,16 @@
-package com.example.admin.livedata
+package com.example.admin.livedata.views
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.admin.livedata.Models.Followers
+import com.example.admin.livedata.Models.Message
+import com.example.admin.livedata.R
 
 import com.example.admin.livedata.databinding.ActivityFollowerBinding
+import com.example.admin.livedata.viewModel.FollowersViewModel
 import kotlinx.android.synthetic.main.activity_follower.*
 
 class FollowerActivity : AppCompatActivity() {
@@ -18,7 +22,9 @@ class FollowerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding: ActivityFollowerBinding =
-            DataBindingUtil.setContentView(this, R.layout.activity_follower)
+            DataBindingUtil.setContentView(this,
+                R.layout.activity_follower
+            )
         binding.followerModel = Followers(count.toString())
 
         val viewModel = ViewModelProviders.of(this).get(FollowersViewModel::class.java)
@@ -30,7 +36,9 @@ class FollowerActivity : AppCompatActivity() {
                 viewModel.count = viewModel.count + 1
                 viewModel.changeMessage(flag)
                 changeButtonTextToUnfollow()
+
             } else {
+
                 viewModel.follow(viewModel.count - 1)
                 viewModel.count = viewModel.count - 1
                 viewModel.changeMessage(flag)

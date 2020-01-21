@@ -3,12 +3,12 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".MainActivity">
+        tools:context=".views.MainActivity">
 
     <data>
 
-        <variable name="followerModel" type="com.example.admin.livedata.Followers"/>
-        <variable name="messageModel" type="com.example.admin.livedata.Message"/>
+        <variable name="followerModel" type="com.example.admin.livedata.Models.Followers"/>
+        <variable name="messageModel" type="com.example.admin.livedata.Models.Message"/>
 <!--        <variable name="messageLeftModel" type="com.example.admin.livedata.MessageLeft" />-->
 
     </data>

@@ -1,4 +1,4 @@
-package com.example.admin.livedata
+package com.example.admin.livedata.viewModel
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
@@ -16,7 +16,7 @@ var count = 0
 
     fun follow(count: Int) {
 
-        _observeTextState.value =count
+        _observeTextState.value = count
 
     }
 
@@ -24,13 +24,14 @@ var count = 0
 
         if (flag) {
             _observeMeessageState.value = "Follower Added"
+
         } else {
             _observeMeessageState.value = "Follower Left"
         }
-
     }
 
     fun unFollow(count: Int) {
+
         _observeTextState.value = count
 
     }

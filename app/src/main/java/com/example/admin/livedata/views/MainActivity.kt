@@ -1,10 +1,12 @@
-package com.example.admin.livedata
+package com.example.admin.livedata.views
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.admin.livedata.R
+import com.example.admin.livedata.viewModel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonNext.setOnClickListener {
-            startActivity(Intent(this,FollowerActivity::class.java))
+            startActivity(Intent(this, FollowerActivity::class.java))
 
         }
 
