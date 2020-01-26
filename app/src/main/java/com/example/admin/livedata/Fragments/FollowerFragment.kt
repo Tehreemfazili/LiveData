@@ -14,7 +14,6 @@ class ExampleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-       // return inflater.inflate(R.layout.example_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_follower_added, container, false)
     }
 }
