@@ -54,7 +54,7 @@ class FollowerActivity : AppCompatActivity() {
         viewModel.observeMessage.observe(this, Observer {
 
             it ?: return@Observer
-            binding.messageModel = Message(it)
+           // binding.messageModel = Message(it)
         })
 
     }
