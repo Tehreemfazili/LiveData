@@ -18,8 +18,9 @@ class ExampleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val fragmentBinding : FragmentFollowerAddedBinding = DataBindingUtil.inflate(inflater,
-            R.layout.fragment_follower_added, container, false)
-        return fragmentBinding.root
+//        val fragmentBinding : FragmentFollowerAddedBinding = DataBindingUtil.inflate(inflater,
+//            R.layout.fragment_follower_added, container, false)
+//        return fragmentBinding.root
+        return inflater.inflate(R.layout.fragment_follower_added,container,false)
     }
 }
